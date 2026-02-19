@@ -17,11 +17,22 @@ export async function middleware(request: NextRequest) {
   // First, handle intl routing
   const response = intlMiddleware(request);
 
-  // Then refresh the Supabase session
-  const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    {
+  // Skip auth checks if Supabase is not configured
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+  if (
+    !supabaseUrl ||
+    !supabaseKey ||
+    supabaseUrl === "https://placeholder.supabase.co" ||
+    supabaseUrl.includes("placeholder")
+  ) {
+    return response;
+  }
+
+  try {
+    // Refresh the Supabase session
+    const supabase = createServerClient(supabaseUrl, supabaseKey, {
       cookies: {
         getAll() {
           return request.cookies.getAll();
@@ -35,32 +46,39 @@ export async function middleware(request: NextRequest) {
           );
         },
       },
-    }
-  );
+    });
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
 
-  const pathWithoutLocale = getPathnameWithoutLocale(request.nextUrl.pathname);
-
-  // Redirect authenticated users away from auth pages
-  if (user && AUTH_PATHS.some((p) => pathWithoutLocale.startsWith(p))) {
-    const locale = request.nextUrl.pathname.match(/^\/(en|pt)/)?.[1] || "en";
-    return NextResponse.redirect(
-      new URL(`/${locale}/dashboard`, request.url)
+    const pathWithoutLocale = getPathnameWithoutLocale(
+      request.nextUrl.pathname
     );
-  }
 
-  // Redirect unauthenticated users away from protected pages
-  const isPublic =
-    PUBLIC_PATHS.some((p) => pathWithoutLocale === p) ||
-    AUTH_PATHS.some((p) => pathWithoutLocale.startsWith(p)) ||
-    pathWithoutLocale.startsWith("/api/");
+    // Redirect authenticated users away from auth pages
+    if (user && AUTH_PATHS.some((p) => pathWithoutLocale.startsWith(p))) {
+      const locale =
+        request.nextUrl.pathname.match(/^\/(en|pt)/)?.[1] || "en";
+      return NextResponse.redirect(
+        new URL(`/${locale}/dashboard`, request.url)
+      );
+    }
 
-  if (!user && !isPublic) {
-    const locale = request.nextUrl.pathname.match(/^\/(en|pt)/)?.[1] || "en";
-    return NextResponse.redirect(new URL(`/${locale}/login`, request.url));
+    // Redirect unauthenticated users away from protected pages
+    const isPublic =
+      PUBLIC_PATHS.some((p) => pathWithoutLocale === p) ||
+      AUTH_PATHS.some((p) => pathWithoutLocale.startsWith(p)) ||
+      pathWithoutLocale.startsWith("/api/");
+
+    if (!user && !isPublic) {
+      const locale =
+        request.nextUrl.pathname.match(/^\/(en|pt)/)?.[1] || "en";
+      return NextResponse.redirect(new URL(`/${locale}/login`, request.url));
+    }
+  } catch {
+    // If Supabase auth fails, allow the request through
+    // (the page-level auth checks will handle it)
   }
 
   return response;
