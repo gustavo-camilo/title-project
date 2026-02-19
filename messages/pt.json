@@ -1,0 +1,247 @@
+{
+  "common": {
+    "appName": "TitleSearch Pro",
+    "tagline": "Saiba o Que Você Está Comprando Antes do Leilão",
+    "getStarted": "Começar",
+    "login": "Entrar",
+    "signup": "Criar Conta",
+    "logout": "Sair",
+    "dashboard": "Painel",
+    "orders": "Pedidos",
+    "credits": "Créditos",
+    "profile": "Perfil",
+    "admin": "Admin",
+    "loading": "Carregando...",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "submit": "Enviar",
+    "back": "Voltar",
+    "next": "Próximo",
+    "viewAll": "Ver Todos",
+    "learnMore": "Saiba Mais",
+    "contact": "Contato",
+    "about": "Sobre",
+    "pricing": "Preços",
+    "blog": "Blog",
+    "language": "Idioma",
+    "english": "English",
+    "portuguese": "Português"
+  },
+  "hero": {
+    "title": "Saiba o Que Você Está Comprando Antes do Leilão",
+    "subtitle": "Relatórios completos de pesquisa de título para propriedades em leilão de tax deed e foreclosure. Todos os ônus, julgamentos e gravames — em um único relatório.",
+    "cta": "Comece Sua Primeira Pesquisa",
+    "trustedBy": "Confiado por investidores em todo o país",
+    "turnaround": "Entrega em 24-48 Horas",
+    "reportsDelivered": "Relatórios Entregues"
+  },
+  "features": {
+    "title": "O Que Pesquisamos",
+    "subtitle": "Cada ônus e gravame crítico, pesquisado e verificado pela nossa equipe.",
+    "mortgages": {
+      "title": "Hipotecas Existentes",
+      "description": "Primeira e segunda hipotecas, cessões e registros de quitação dos cartórios do condado."
+    },
+    "irsLiens": {
+      "title": "Ônus do IRS",
+      "description": "Ônus fiscais federais e estaduais registrados contra o proprietário que podem sobreviver ao foreclosure."
+    },
+    "hoaLiens": {
+      "title": "Ônus de HOA",
+      "description": "Ônus de associação de proprietários, taxas pendentes e avaliações especiais que podem ser transferidas."
+    },
+    "propertyTax": {
+      "title": "Dívida de IPTU",
+      "description": "Impostos sobre propriedade em atraso, certificados fiscais e avaliações especiais do coletor de impostos."
+    },
+    "mechanicsLiens": {
+      "title": "Ônus de Empreiteiro",
+      "description": "Ônus de empreiteiros e subempreiteiros por trabalhos de construção ou reforma não pagos."
+    },
+    "codeViolations": {
+      "title": "Violações de Código",
+      "description": "Alvarás em aberto, violações de código, notificações de condenação e multas municipais."
+    },
+    "judgments": {
+      "title": "Julgamentos Contra o Proprietário",
+      "description": "Julgamentos civis, ônus de pensão alimentícia e outras obrigações judiciais vinculadas à propriedade."
+    },
+    "lisPendens": {
+      "title": "Lis Pendens",
+      "description": "Processos judiciais pendentes que afetam a propriedade, incluindo ações de foreclosure e disputas."
+    }
+  },
+  "howItWorks": {
+    "title": "Como Funciona",
+    "subtitle": "Receba seu relatório completo de título em três passos simples.",
+    "step1": {
+      "title": "Envie os Dados da Propriedade",
+      "description": "Digite o endereço da propriedade, condado e informações disponíveis. Informe se é leilão de tax deed ou foreclosure."
+    },
+    "step2": {
+      "title": "Nós Pesquisamos Tudo",
+      "description": "Nossa equipe pesquisa registros do condado, bancos de dados do coletor de impostos, registros judiciais e sistemas federais."
+    },
+    "step3": {
+      "title": "Receba Seu Relatório",
+      "description": "Receba um relatório completo com avaliação de risco em 24-48 horas, entregue diretamente no seu painel."
+    }
+  },
+  "pricing": {
+    "title": "Preços Simples, Baseados em Créditos",
+    "subtitle": "Compre créditos e use quando precisar. Sem assinaturas, sem taxas ocultas.",
+    "perCredit": "por crédito",
+    "credits": "créditos",
+    "credit": "crédito",
+    "savings": "Economize {percent}%",
+    "popular": "Mais Popular",
+    "buyNow": "Comprar",
+    "starter": {
+      "name": "Iniciante",
+      "description": "Perfeito para sua primeira compra em leilão"
+    },
+    "explorer": {
+      "name": "Explorador",
+      "description": "Para participantes ativos de leilões"
+    },
+    "professional": {
+      "name": "Profissional",
+      "description": "Para investidores e flippers sérios"
+    },
+    "enterprise": {
+      "name": "Empresarial",
+      "description": "Para atacadistas e compradores de alto volume"
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "q1": {
+      "question": "O que é uma pesquisa de título?",
+      "answer": "Uma pesquisa de título examina registros públicos para identificar ônus, gravames e outros problemas que possam afetar sua propriedade. É essencial antes de comprar em leilão porque você está comprando \"como está\" sem divulgações do vendedor."
+    },
+    "q2": {
+      "question": "Quanto tempo leva um relatório?",
+      "answer": "Relatórios padrão são entregues em 24-48 horas. Opções de entrega expressa estão disponíveis para leilões urgentes."
+    },
+    "q3": {
+      "question": "Quais estados vocês cobrem?",
+      "answer": "Fornecemos relatórios de pesquisa de título para propriedades em todos os 50 estados dos EUA. Nossos pesquisadores são experientes com sistemas específicos de cada condado."
+    },
+    "q4": {
+      "question": "Os créditos expiram?",
+      "answer": "Os créditos são válidos por 12 meses a partir da data da compra. Créditos não utilizados podem ser reembolsados dentro de 30 dias da compra."
+    },
+    "q5": {
+      "question": "Isso substitui o seguro de título?",
+      "answer": "Não. Nossos relatórios são ferramentas informativas de pesquisa para ajudá-lo a tomar decisões de lance informadas. Sempre recomendamos obter seguro de título quando possível e consultar um advogado imobiliário qualificado."
+    },
+    "q6": {
+      "question": "Quais informações preciso para enviar um pedido?",
+      "answer": "No mínimo, você precisa do endereço da propriedade e do condado. Se disponível, inclua o número do lote, nome do proprietário atual e data do leilão."
+    }
+  },
+  "cta": {
+    "title": "Pronto para Comprar com Confiança?",
+    "subtitle": "Não arrisque ônus ocultos ou dívidas surpresa. Obtenha um relatório completo de pesquisa de título antes do seu próximo leilão.",
+    "button": "Obtenha Seu Primeiro Relatório"
+  },
+  "footer": {
+    "description": "Relatórios completos de pesquisa de título para compradores e investidores de leilões imobiliários.",
+    "product": "Produto",
+    "company": "Empresa",
+    "legal": "Legal",
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Serviço",
+    "disclaimer": "Aviso Legal",
+    "allRightsReserved": "Todos os direitos reservados.",
+    "disclaimerText": "Os relatórios são apenas para fins informativos e não constituem aconselhamento jurídico. Não substituem o seguro de título."
+  },
+  "auth": {
+    "loginTitle": "Bem-Vindo de Volta",
+    "loginSubtitle": "Entre para acessar seu painel e relatórios.",
+    "signupTitle": "Crie Sua Conta",
+    "signupSubtitle": "Comece a pesquisar propriedades com confiança.",
+    "forgotTitle": "Redefinir Sua Senha",
+    "forgotSubtitle": "Digite seu email e enviaremos um link de redefinição.",
+    "email": "Email",
+    "password": "Senha",
+    "confirmPassword": "Confirmar Senha",
+    "fullName": "Nome Completo",
+    "rememberMe": "Lembrar de mim",
+    "forgotPassword": "Esqueceu a senha?",
+    "noAccount": "Não tem uma conta?",
+    "hasAccount": "Já tem uma conta?",
+    "sendResetLink": "Enviar Link de Redefinição",
+    "resetSent": "Verifique seu email para o link de redefinição.",
+    "loginError": "Email ou senha inválidos. Tente novamente.",
+    "signupError": "Não foi possível criar a conta. Tente novamente.",
+    "signupSuccess": "Conta criada! Verifique seu email para confirmar."
+  },
+  "dashboard": {
+    "welcome": "Bem-vindo, {name}",
+    "overview": "Visão Geral",
+    "creditBalance": "Saldo de Créditos",
+    "creditsRemaining": "{count, plural, =0 {Sem créditos} one {1 crédito} other {# créditos}} restantes",
+    "buyCredits": "Comprar Créditos",
+    "recentOrders": "Pedidos Recentes",
+    "noOrders": "Nenhum pedido ainda. Envie sua primeira pesquisa!",
+    "newOrder": "Nova Pesquisa",
+    "viewReport": "Ver Relatório",
+    "totalOrders": "Total de Pedidos",
+    "completedOrders": "Concluídos",
+    "pendingOrders": "Em Andamento"
+  },
+  "orders": {
+    "title": "Meus Pedidos",
+    "newOrder": "Nova Pesquisa de Propriedade",
+    "propertyAddress": "Endereço da Propriedade",
+    "city": "Cidade",
+    "state": "Estado",
+    "county": "Condado",
+    "zipCode": "CEP",
+    "parcelId": "Número do Lote / Folio",
+    "ownerName": "Nome do Proprietário Atual",
+    "auctionDate": "Data do Leilão",
+    "auctionType": "Tipo de Leilão",
+    "taxDeed": "Tax Deed",
+    "foreclosure": "Foreclosure",
+    "other": "Outro",
+    "notes": "Notas Adicionais",
+    "submitOrder": "Enviar Pedido (1 Crédito)",
+    "insufficientCredits": "Créditos insuficientes. Por favor, compre mais.",
+    "orderSubmitted": "Pedido enviado com sucesso!",
+    "status": {
+      "submitted": "Enviado",
+      "assigned": "Atribuído",
+      "in_progress": "Em Andamento",
+      "in_review": "Em Revisão",
+      "completed": "Concluído",
+      "revision_requested": "Revisão Solicitada",
+      "cancelled": "Cancelado"
+    }
+  },
+  "credits": {
+    "title": "Comprar Créditos",
+    "balance": "Saldo Atual",
+    "history": "Histórico de Transações",
+    "purchase": "Compra",
+    "usage": "Uso",
+    "refund": "Reembolso",
+    "noTransactions": "Nenhuma transação ainda."
+  },
+  "admin": {
+    "title": "Painel Administrativo",
+    "totalUsers": "Total de Usuários",
+    "totalOrders": "Total de Pedidos",
+    "totalRevenue": "Receita Total",
+    "pendingOrders": "Pedidos Pendentes",
+    "orderManagement": "Gerenciamento de Pedidos",
+    "assignResearcher": "Atribuir Pesquisador",
+    "userManagement": "Gerenciamento de Usuários",
+    "researcherQueue": "Minha Fila",
+    "startResearch": "Iniciar Pesquisa",
+    "submitForReview": "Enviar para Revisão",
+    "approve": "Aprovar",
+    "requestRevision": "Solicitar Revisão"
+  }
+}

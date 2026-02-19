@@ -1,0 +1,247 @@
+{
+  "common": {
+    "appName": "TitleSearch Pro",
+    "tagline": "Know What You're Buying Before the Auction",
+    "getStarted": "Get Started",
+    "login": "Log In",
+    "signup": "Sign Up",
+    "logout": "Log Out",
+    "dashboard": "Dashboard",
+    "orders": "Orders",
+    "credits": "Credits",
+    "profile": "Profile",
+    "admin": "Admin",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "back": "Back",
+    "next": "Next",
+    "viewAll": "View All",
+    "learnMore": "Learn More",
+    "contact": "Contact",
+    "about": "About",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "language": "Language",
+    "english": "English",
+    "portuguese": "Português"
+  },
+  "hero": {
+    "title": "Know What You're Buying Before the Auction",
+    "subtitle": "Comprehensive title search reports for tax deed and foreclosure properties. All liens, judgments, and encumbrances — in one report.",
+    "cta": "Start Your First Search",
+    "trustedBy": "Trusted by investors nationwide",
+    "turnaround": "24-48 Hour Turnaround",
+    "reportsDelivered": "Reports Delivered"
+  },
+  "features": {
+    "title": "What We Search",
+    "subtitle": "Every critical lien and encumbrance, researched and verified by our team.",
+    "mortgages": {
+      "title": "Existing Mortgages",
+      "description": "First and second mortgages, assignments, and satisfaction records from county recorder offices."
+    },
+    "irsLiens": {
+      "title": "IRS Liens",
+      "description": "Federal and state tax liens filed against the property owner that may survive foreclosure."
+    },
+    "hoaLiens": {
+      "title": "HOA Liens",
+      "description": "Homeowners association liens, outstanding assessments, and special assessments that could transfer."
+    },
+    "propertyTax": {
+      "title": "Property Tax Debt",
+      "description": "Delinquent property taxes, tax certificates, and special assessments from the county tax collector."
+    },
+    "mechanicsLiens": {
+      "title": "Mechanic's Liens",
+      "description": "Contractor and subcontractor liens for unpaid construction or renovation work on the property."
+    },
+    "codeViolations": {
+      "title": "Code Violations",
+      "description": "Open building permits, code enforcement violations, condemnation notices, and municipal fines."
+    },
+    "judgments": {
+      "title": "Judgments Against Owner",
+      "description": "Civil judgments, child support liens, and other court-ordered obligations attached to the property."
+    },
+    "lisPendens": {
+      "title": "Lis Pendens",
+      "description": "Pending lawsuits affecting the property including foreclosure actions, partition suits, and disputes."
+    }
+  },
+  "howItWorks": {
+    "title": "How It Works",
+    "subtitle": "Get your comprehensive title report in three simple steps.",
+    "step1": {
+      "title": "Submit Property Details",
+      "description": "Enter the property address, county, and any available parcel information. Tell us if it's a tax deed or foreclosure auction."
+    },
+    "step2": {
+      "title": "We Research Everything",
+      "description": "Our team searches county records, tax collector databases, court records, and federal systems to compile your report."
+    },
+    "step3": {
+      "title": "Receive Your Report",
+      "description": "Get a comprehensive title report with risk assessment within 24-48 hours, delivered directly to your dashboard."
+    }
+  },
+  "pricing": {
+    "title": "Simple, Credit-Based Pricing",
+    "subtitle": "Buy credits and use them whenever you need. No subscriptions, no hidden fees.",
+    "perCredit": "per credit",
+    "credits": "credits",
+    "credit": "credit",
+    "savings": "Save {percent}%",
+    "popular": "Most Popular",
+    "buyNow": "Buy Now",
+    "starter": {
+      "name": "Starter",
+      "description": "Perfect for your first auction purchase"
+    },
+    "explorer": {
+      "name": "Explorer",
+      "description": "For active auction participants"
+    },
+    "professional": {
+      "name": "Professional",
+      "description": "For serious investors and flippers"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "description": "For wholesalers and high-volume buyers"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": {
+      "question": "What is a title search?",
+      "answer": "A title search examines public records to identify liens, encumbrances, and other issues that could affect your ownership of a property. It's essential before purchasing at auction because you're buying \"as-is\" with no seller disclosures."
+    },
+    "q2": {
+      "question": "How long does a report take?",
+      "answer": "Standard reports are delivered within 24-48 hours. Rush delivery options are available for time-sensitive auctions."
+    },
+    "q3": {
+      "question": "What states do you cover?",
+      "answer": "We provide title search reports for properties in all 50 US states. Our researchers are experienced with county-specific systems and recording practices nationwide."
+    },
+    "q4": {
+      "question": "Do credits expire?",
+      "answer": "Credits are valid for 12 months from the date of purchase. Unused credits can be refunded within 30 days of purchase."
+    },
+    "q5": {
+      "question": "Is this a substitute for title insurance?",
+      "answer": "No. Our reports are informational research tools designed to help you make informed bidding decisions. We always recommend obtaining title insurance when possible and consulting with a qualified real estate attorney."
+    },
+    "q6": {
+      "question": "What information do I need to submit an order?",
+      "answer": "At minimum, you need the property address and county. If available, include the parcel/folio number, current owner name, and auction date. The more information you provide, the more accurate your report will be."
+    }
+  },
+  "cta": {
+    "title": "Ready to Buy With Confidence?",
+    "subtitle": "Don't risk hidden liens or surprise debts. Get a comprehensive title search report before your next auction.",
+    "button": "Get Your First Report"
+  },
+  "footer": {
+    "description": "Comprehensive title search reports for real estate auction buyers and investors.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "disclaimer": "Disclaimer",
+    "allRightsReserved": "All rights reserved.",
+    "disclaimerText": "Reports are for informational purposes only and do not constitute legal advice. Not a substitute for title insurance."
+  },
+  "auth": {
+    "loginTitle": "Welcome Back",
+    "loginSubtitle": "Log in to access your dashboard and reports.",
+    "signupTitle": "Create Your Account",
+    "signupSubtitle": "Start researching properties with confidence.",
+    "forgotTitle": "Reset Your Password",
+    "forgotSubtitle": "Enter your email and we'll send you a reset link.",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "fullName": "Full Name",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "sendResetLink": "Send Reset Link",
+    "resetSent": "Check your email for a password reset link.",
+    "loginError": "Invalid email or password. Please try again.",
+    "signupError": "Could not create account. Please try again.",
+    "signupSuccess": "Account created! Check your email to verify."
+  },
+  "dashboard": {
+    "welcome": "Welcome back, {name}",
+    "overview": "Overview",
+    "creditBalance": "Credit Balance",
+    "creditsRemaining": "{count, plural, =0 {No credits} one {1 credit} other {# credits}} remaining",
+    "buyCredits": "Buy Credits",
+    "recentOrders": "Recent Orders",
+    "noOrders": "No orders yet. Submit your first property search!",
+    "newOrder": "New Search",
+    "viewReport": "View Report",
+    "totalOrders": "Total Orders",
+    "completedOrders": "Completed",
+    "pendingOrders": "In Progress"
+  },
+  "orders": {
+    "title": "My Orders",
+    "newOrder": "New Property Search",
+    "propertyAddress": "Property Address",
+    "city": "City",
+    "state": "State",
+    "county": "County",
+    "zipCode": "ZIP Code",
+    "parcelId": "Parcel / Folio Number",
+    "ownerName": "Current Owner Name",
+    "auctionDate": "Auction Date",
+    "auctionType": "Auction Type",
+    "taxDeed": "Tax Deed",
+    "foreclosure": "Foreclosure",
+    "other": "Other",
+    "notes": "Additional Notes",
+    "submitOrder": "Submit Order (1 Credit)",
+    "insufficientCredits": "Insufficient credits. Please purchase more.",
+    "orderSubmitted": "Order submitted successfully!",
+    "status": {
+      "submitted": "Submitted",
+      "assigned": "Assigned",
+      "in_progress": "In Progress",
+      "in_review": "Under Review",
+      "completed": "Completed",
+      "revision_requested": "Revision Requested",
+      "cancelled": "Cancelled"
+    }
+  },
+  "credits": {
+    "title": "Buy Credits",
+    "balance": "Current Balance",
+    "history": "Transaction History",
+    "purchase": "Purchase",
+    "usage": "Usage",
+    "refund": "Refund",
+    "noTransactions": "No transactions yet."
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "totalUsers": "Total Users",
+    "totalOrders": "Total Orders",
+    "totalRevenue": "Total Revenue",
+    "pendingOrders": "Pending Orders",
+    "orderManagement": "Order Management",
+    "assignResearcher": "Assign Researcher",
+    "userManagement": "User Management",
+    "researcherQueue": "My Queue",
+    "startResearch": "Start Research",
+    "submitForReview": "Submit for Review",
+    "approve": "Approve",
+    "requestRevision": "Request Revision"
+  }
+}
