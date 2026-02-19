@@ -1,7 +1,7 @@
 "use server";
 
 import { createClient } from "@/lib/supabase/server";
-import { stripe } from "@/lib/stripe/client";
+import { getStripe } from "@/lib/stripe/client";
 import { getLocale } from "next-intl/server";
 import { CREDIT_PACKAGES } from "@/lib/constants";
 
@@ -32,7 +32,7 @@ export async function createCheckoutSession(packageId: string) {
   let customerId = profile?.stripe_customer_id;
 
   if (!customerId) {
-    const customer = await stripe.customers.create({
+    const customer = await getStripe().customers.create({
       email: user.email,
       metadata: { supabase_user_id: user.id },
     });
@@ -44,7 +44,7 @@ export async function createCheckoutSession(packageId: string) {
       .eq("id", user.id);
   }
 
-  const session = await stripe.checkout.sessions.create({
+  const session = await getStripe().checkout.sessions.create({
     customer: customerId,
     line_items: [
       {
