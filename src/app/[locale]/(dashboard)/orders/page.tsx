@@ -51,22 +51,24 @@ export default async function OrdersPage() {
           </Card>
         ) : (
           orders.map((order) => (
-            <Card key={order.id} className="border-border/40">
-              <CardContent className="flex items-center justify-between p-4">
-                <div>
-                  <p className="font-medium">{order.property_address}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {order.property_city}, {order.property_state} &middot;{" "}
-                    {order.property_county} County
-                  </p>
+            <Link key={order.id} href={`/orders/${order.id}`}>
+              <Card className="border-border/40 transition-colors hover:border-primary/30">
+                <CardContent className="flex items-center justify-between p-4">
+                  <div>
+                    <p className="font-medium">{order.property_address}</p>
+                    <p className="text-sm text-muted-foreground">
+                      {order.property_city}, {order.property_state} &middot;{" "}
+                      {order.property_county} County
+                    </p>
                   <p className="mt-1 text-xs text-muted-foreground">
                     {new Date(order.created_at).toLocaleDateString()}
                     {order.auction_type && ` · ${t(order.auction_type as "taxDeed" | "foreclosure" | "other")}`}
                   </p>
                 </div>
-                <Badge variant="secondary">{t(`status.${order.status}`)}</Badge>
-              </CardContent>
-            </Card>
+                  <Badge variant="secondary">{t(`status.${order.status}`)}</Badge>
+                </CardContent>
+              </Card>
+            </Link>
           ))
         )}
       </div>

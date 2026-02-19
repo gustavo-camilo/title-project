@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { createClient } from "@/lib/supabase/server";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "@/i18n/navigation";
 
 export default async function AdminOrdersPage() {
   const t = await getTranslations("admin");
@@ -28,8 +29,9 @@ export default async function AdminOrdersPage() {
           </Card>
         ) : (
           orders.map((order) => (
-            <Card key={order.id} className="border-border/40">
-              <CardContent className="flex items-center justify-between p-4">
+            <Link key={order.id} href={`/admin/orders/${order.id}`}>
+              <Card className="border-border/40 transition-colors hover:border-primary/30">
+                <CardContent className="flex items-center justify-between p-4">
                 <div>
                   <p className="font-medium">{order.property_address}</p>
                   <p className="text-sm text-muted-foreground">
@@ -49,8 +51,9 @@ export default async function AdminOrdersPage() {
                     <Badge variant="destructive">Unassigned</Badge>
                   )}
                 </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </Link>
           ))
         )}
       </div>

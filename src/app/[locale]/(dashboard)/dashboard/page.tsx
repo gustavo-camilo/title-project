@@ -125,7 +125,7 @@ export default async function DashboardPage() {
               {orders.map((order) => (
                 <Link
                   key={order.id}
-                  href={`/orders`}
+                  href={`/orders/${order.id}`}
                   className="flex items-center justify-between rounded-lg border border-border/40 p-4 transition-colors hover:bg-accent"
                 >
                   <div>

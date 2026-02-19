@@ -243,5 +243,40 @@
     "submitForReview": "Submit for Review",
     "approve": "Approve",
     "requestRevision": "Request Revision"
+  },
+  "profile": {
+    "title": "Profile",
+    "editProfile": "Edit Profile",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "preferredLanguage": "Preferred Language",
+    "creditBalance": "Credit Balance",
+    "memberSince": "Member Since",
+    "updateSuccess": "Profile updated successfully.",
+    "emailCannotChange": "Email cannot be changed here."
+  },
+  "orderDetail": {
+    "title": "Order Details",
+    "propertyInfo": "Property Information",
+    "statusHistory": "Status History",
+    "reportReady": "Report Ready",
+    "riskLevel": "Risk Level",
+    "downloadReport": "Download Report",
+    "cancelOrder": "Cancel Order",
+    "confirmCancel": "Yes, Cancel & Refund Credit",
+    "keepOrder": "Keep",
+    "cancelConfirm": "Are you sure? Your credit will be refunded.",
+    "customerInfo": "Customer",
+    "creditsBalance": "Credits",
+    "checklistProgress": "Checklist Progress"
+  },
+  "researcher": {
+    "workspace": "Research Workspace",
+    "progress": "Research Progress",
+    "noChecklist": "Checklist has not been initialized yet.",
+    "initChecklist": "Start Checklist",
+    "notesPlaceholder": "Notes...",
+    "sourceUrlPlaceholder": "Source URL..."
   }
 }

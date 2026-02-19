@@ -243,5 +243,40 @@
     "submitForReview": "Enviar para Revisão",
     "approve": "Aprovar",
     "requestRevision": "Solicitar Revisão"
+  },
+  "profile": {
+    "title": "Perfil",
+    "editProfile": "Editar Perfil",
+    "fullName": "Nome Completo",
+    "email": "Email",
+    "phone": "Telefone",
+    "preferredLanguage": "Idioma Preferido",
+    "creditBalance": "Saldo de Créditos",
+    "memberSince": "Membro Desde",
+    "updateSuccess": "Perfil atualizado com sucesso.",
+    "emailCannotChange": "O email não pode ser alterado aqui."
+  },
+  "orderDetail": {
+    "title": "Detalhes do Pedido",
+    "propertyInfo": "Informações da Propriedade",
+    "statusHistory": "Histórico de Status",
+    "reportReady": "Relatório Pronto",
+    "riskLevel": "Nível de Risco",
+    "downloadReport": "Baixar Relatório",
+    "cancelOrder": "Cancelar Pedido",
+    "confirmCancel": "Sim, Cancelar e Reembolsar Crédito",
+    "keepOrder": "Manter",
+    "cancelConfirm": "Tem certeza? Seu crédito será reembolsado.",
+    "customerInfo": "Cliente",
+    "creditsBalance": "Créditos",
+    "checklistProgress": "Progresso do Checklist"
+  },
+  "researcher": {
+    "workspace": "Área de Pesquisa",
+    "progress": "Progresso da Pesquisa",
+    "noChecklist": "O checklist ainda não foi inicializado.",
+    "initChecklist": "Iniciar Checklist",
+    "notesPlaceholder": "Notas...",
+    "sourceUrlPlaceholder": "URL da fonte..."
   }
 }

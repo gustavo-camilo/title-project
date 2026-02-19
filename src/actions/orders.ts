@@ -106,3 +106,64 @@ export async function createOrder(formData: FormData) {
 
   redirect({ href: "/orders", locale });
 }
+
+export async function cancelOrder(orderId: string) {
+  const supabase = await createClient();
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) {
+    return { error: "Not authenticated" };
+  }
+
+  const { data: order } = await supabase
+    .from("orders")
+    .select("id, customer_id, status")
+    .eq("id", orderId)
+    .eq("customer_id", user.id)
+    .single();
+
+  if (!order) {
+    return { error: "Order not found" };
+  }
+
+  if (order.status !== "submitted") {
+    return { error: "Only submitted orders can be cancelled" };
+  }
+
+  const { error: updateError } = await supabase
+    .from("orders")
+    .update({ status: "cancelled" })
+    .eq("id", orderId)
+    .eq("status", "submitted");
+
+  if (updateError) {
+    return { error: "Could not cancel order. Please try again." };
+  }
+
+  // Refund credit
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("credit_balance")
+    .eq("id", user.id)
+    .single();
+
+  if (profile) {
+    await supabase
+      .from("profiles")
+      .update({ credit_balance: profile.credit_balance + 1 })
+      .eq("id", user.id);
+
+    await supabase.from("credit_ledger").insert({
+      user_id: user.id,
+      amount: 1,
+      type: "refund",
+      reference_id: orderId,
+      description: `Order cancelled: ${orderId.slice(0, 8)}`,
+    });
+  }
+
+  return { success: true };
+}

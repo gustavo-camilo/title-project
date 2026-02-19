@@ -3,6 +3,7 @@ import { createClient } from "@/lib/supabase/server";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Link } from "@/i18n/navigation";
 import { ClipboardList } from "lucide-react";
 
 export default async function ResearcherQueuePage() {
@@ -55,9 +56,11 @@ export default async function ResearcherQueuePage() {
                   <Badge variant="secondary">
                     {tOrders(`status.${order.status}`)}
                   </Badge>
-                  <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                    {t("startResearch")}
-                  </Button>
+                  <Link href={`/researcher/${order.id}`}>
+                    <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                      {t("startResearch")}
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>
